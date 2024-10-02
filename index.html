@@ -1,0 +1,120 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>AdAI</title>  
+    <link rel="stylesheet" href="styles.css">  
+</head>  
+<body>  
+    <header>  
+        <nav>  
+            <ul>  
+                <li><a href="#dashboard">Dashboard</a></li>  
+                <li><a href="#banner-creation">Banner Creation</a></li>  
+                <li><a href="#video-ad-creation">Video Ad Creation</a></li>  
+                <li><a href="#previous-designs">Previous Designs</a></li>  
+                <li><a href="#analytics-page">Analytics Page</a></li>  
+                <li><a href="#settings">Settings</a></li>  
+                <li><a href="#help-support">Help & Support</a></li>  
+            </ul>  
+        </nav>  
+    </header>  
+    <main>  
+        <section id="dashboard">  
+            <h1>Welcome to AdAI!</h1>  
+            <p>Create stunning promotional content effortlessly.</p>  
+            <button>Generate New Banner</button>  
+            <button>Create Video Ad</button>  
+            <button>View Previous Designs</button>  
+            <div class="analytics-overview">  
+                <h2>Your Campaign Performance</h2>  
+                <p>Total Clicks: <span id="total-clicks">0</span></p>  
+                <p>Impressions: <span id="impressions">0</span></p>  
+                <p>Conversions: <span id="conversions">0</span></p>  
+            </div>  
+        </section>  
+        <section id="banner-creation">  
+            <h1>Banner Creation</h1>  
+            <form>  
+                <label for="product-images">Upload Product Images:</label>  
+                <input type="file" id="product-images" multiple>  
+                <label for="promotional-offer">Enter Promotional Offer:</label>  
+                <input type="text" id="promotional-offer">  
+                <label for="theme">Select Theme:</label>  
+                <select id="theme">  
+                    <option value="diwali">Diwali</option>  
+                    <option value="independence-day">Independence Day</option>  
+                    <option value="holiday-sale">Holiday Sale</option>  
+                    <option value="spring-collection">Spring Collection</option>  
+                </select>  
+                <label for="color-palette">Choose Color Palette:</label>  
+                <input type="color" id="color-palette">  
+                <button type="button">Preview Your Banner</button>  
+                <button type="submit">Generate Banner</button>  
+            </form>  
+        </section>  
+        <section id="video-ad-creation">  
+            <h1>Video Ad Creation</h1>  
+            <form>  
+                <label for="video-clips">Upload Video Clips:</label>  
+                <input type="file" id="video-clips" multiple>  
+                <label for="promotional-text">Enter Promotional Text:</label>  
+                <input type="text" id="promotional-text">  
+                <label for="background-music">Select Background Music:</label>  
+                <select id="background-music">  
+                    <option value="upbeat">Upbeat</option>  
+                    <option value="calm">Calm</option>  
+                    <option value="festive">Festive</option>  
+                </select>  
+                <label for="duration">Select Duration:</label>  
+                <input type="range" id="duration" min="10" max="60" value="30">  
+                <button type="button">Preview Your Video</button>  
+                <button type="submit">Create Video Ad</button>  
+            </form>  
+        </section>  
+        <section id="previous-designs">  
+            <h1>Previous Designs</h1>  
+            <div class="design-gallery">  
+                <!-- thumbnails of previously generated banners/videos will be displayed here -->  
+            </div>  
+            <input type="search" class="search-bar" id="search-bar" placeholder="Search designs by keywords or date">  
+        </section>  
+        <section id="analytics-page">  
+            <h1>Analytics Page</h1>  
+            <div class="performance-metrics">  
+                <h2>Clicks:</h2>  
+                <p><span id="clicks">0</span></p>  
+                <h2>Impressions:</h2>  
+                <p><span id="impressions">0</span></p>  
+                <h2>Engagement Rate:</h2>  
+                <p><span id="engagement-rate">0%</span></p>  
+            </div>  
+            <div class="filter-options">  
+                <label for="date-range">Date Range:</label>  
+                <select id="date-range">  
+                    <option value="last-7-days">Last 7 Days</option>  
+                    <option value="last-30-days">Last 30 Days</option>  
+                    <option value="custom">Custom</option>  
+                </select>  
+            </div>  
+        </section>  
+        <section id="settings">  
+            <h1>Settings</h1>  
+            <form>  
+                <label for="account-settings">Account Settings:</label>  
+                <input type="text" id="account-settings">  
+                <label for="notification-settings">Notification Preferences:</label>  
+                <input type="text" id="notification-settings">  
+                <button type="submit">Save Changes</button>  
+            </form>  
+        </section>  
+        <section id="help-support">  
+            <h1>Help & Support</h1>  
+            <p>If you need assistance, please reach out to our support team.</p>  
+        </section>  
+    </main>  
+
+   <script src="script.js"></script>  
+</body>  
+</html>
